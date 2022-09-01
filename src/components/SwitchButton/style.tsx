@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const BackgroundDiv = styled.div`
-    background-color: var(--background);
+    background-color: ${props => props.theme.colors.background};
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     transition: all 0.3s ease-in-out;
-    color: var(--white);
+    color: ${props => props.theme.colors.color};
 `;
 
 export const BackgroundBoxDiv = styled.div`
